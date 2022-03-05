@@ -1,5 +1,7 @@
 # Softening of trees in random forests
 
+## Introduction
+
 This report describes experiments with application of split softening[1]
 to the trees in random forests[2] for classification problems with 2 classes.
 To compare performance of the models we use the "Area under (ROC) curve" - AUC.
@@ -21,8 +23,8 @@ These scodes are averaged over all trees to produce the forest score.
 When trees in the forest are softened, the score from each tree is
 in the interval [0, 1].
 
-Experiments are implemented in R with packages [randomForest][https://cran.r-project.org/web/packages/randomForest/]
-and [SplitSoftening][https://cran.r-project.org/web/packages/SplitSoftening/].
+Experiments are implemented in R with packages [randomForest](https://cran.r-project.org/web/packages/randomForest/)
+and [SplitSoftening](https://cran.r-project.org/web/packages/SplitSoftening/).
 With the package randomForest a forest with 200 trees is grown using a training set.
 The trees from the forest are converted to the form used by the package SplitSoftening
 and then a softening method is applied.
@@ -48,8 +50,8 @@ From this it follows, that "zero softening" - the softening which is equivalent
 to non-soft tree -
 is optimal for this sample of training cases.
 
-
-[1]: Dvořák, Jakub: *Classification trees with soft splits optimized for ranking*,
+## References
+[1]: Dvořák, Jakub: *Classification trees with soft splits optimized for ranking*.
 Computational Statistics (2019) 34:763–786.
 
-[2]: Breiman, Leo: *Random Forests*, Machine Learning (2001) 1:5-32.
+[2]: Breiman, Leo: *Random Forests*. Machine Learning (2001) 1:5-32.
