@@ -1,3 +1,4 @@
+# Technical report
 # Softening of trees in random forests
 
 ## Introduction
@@ -22,6 +23,8 @@ and 0 when the output is label "negative".
 These scodes are averaged over all trees to produce the forest score.
 When trees in the forest are softened, the score from each tree is
 in the interval [0, 1].
+
+## Experimantal setup
 
 Experiments are implemented in R with packages [randomForest](https://cran.r-project.org/web/packages/randomForest/)
 and [SplitSoftening](https://cran.r-project.org/web/packages/SplitSoftening/).
@@ -50,8 +53,53 @@ From this it follows, that "zero softening" - the softening which is equivalent
 to non-soft tree -
 is optimal for this sample of training cases.
 
+We use the following data sets:
+- [Magic Telescope](https://archive.ics.uci.edu/ml/datasets/magic+gamma+telescope)
+- [MiniBooNE particle identification](https://archive.ics.uci.edu/ml/datasets/MiniBooNE+particle+identification)
+- [Waveform](https://archive.ics.uci.edu/ml/datasets/Waveform+Database+Generator+(Version+1))
+- [EEG Eye State](https://archive.ics.uci.edu/ml/datasets/EEG+Eye+State)
+- [Electrical Grid Stability Simulated Data Data Set](https://archive.ics.uci.edu/ml/datasets/Electrical+Grid+Stability+Simulated+Data+)
+- [HTRU2](https://archive.ics.uci.edu/ml/datasets/HTRU2)
+
+The Waveform data set is originally a set with 3 classes.
+For the purpose of our experiments we define two problems "wfA" and "wfB",
+where "wfA" considers the first class from the original data set as the "signal" class
+and the remaining classes as the "background";
+the "wfB" consideres the second class as the "signal" and the rest as the "background".
+We do not use the data set which has the third class as the "signal" because
+it has the same probabilistic distribution as the "wfA" data set.
+
+## Results
+
+In the previous research of split softening in decision trees [1] we use two kinds of softening method:
+- without optimization
+- with optimization
+In the first group the method called "DR1" is identified as the best
+from the perspective of performance measured by AUC.
+In the second group the method "optim_auc" is the winner;
+it uses the Nelder-Mead optimization with the objective function
+defined as the AUC computed from the training set.
+We use the methods DR1 and optim_auc in our experiments with random forests.
+
+The results are presented in graphs where x-axis is the forest size (number of trees),
+y-axis represents AUC computed on the test set.
+The main title of the graph contains the data set name, the size of the train set
+and the softening method.
+There is a subtitle with the value of the "sampsize" parameter.
+In each graph there are results from the non-softened forest displayed as black points
+and the results from the forest of softened trees as coloured points
+(blue for DR1 softening, red for optim_auc).
+
+Using DR1 softening on random forests brings generally no improvement of AUC
+on the data sets Magic Telescope and MiniBooNE.
+[img/DR1_magic_00250_00012.png]
+
+
+
 ## References
+
 [1]: Dvořák, Jakub: *Classification trees with soft splits optimized for ranking*.
 Computational Statistics (2019) 34:763–786.
 
 [2]: Breiman, Leo: *Random Forests*. Machine Learning (2001) 1:5-32.
+
