@@ -1,6 +1,6 @@
 # Softening Results - method optim_auc
 
-## magic
+## Magic Telescope
 ![magic_00250_00012](img/magic_00250_00012.png)
 ![magic_00250_00025](img/magic_00250_00025.png)
 ![magic_00250_00037](img/magic_00250_00037.png)
@@ -30,7 +30,7 @@
 ![magic_02500_01750](img/magic_02500_01750.png)
 ![magic_02500_02500](img/magic_02500_02500.png)
 
-## mbne
+## MiniBooNE particle identification
 ![mbne_00250_00012](img/mbne_00250_00012.png)
 ![mbne_00250_00025](img/mbne_00250_00025.png)
 ![mbne_00250_00037](img/mbne_00250_00037.png)
@@ -120,7 +120,7 @@
 ![wfB_02500_01750](img/wfB_02500_01750.png)
 ![wfB_02500_02500](img/wfB_02500_02500.png)
 
-## eeges
+## EEG Eye State
 ![eeges_00250_00012](img/eeges_00250_00012.png)
 ![eeges_00250_00025](img/eeges_00250_00025.png)
 ![eeges_00250_00037](img/eeges_00250_00037.png)
@@ -150,7 +150,7 @@
 ![eeges_01997_01397](img/eeges_01997_01397.png)
 ![eeges_01997_01997](img/eeges_01997_01997.png)
 
-## elgrid
+## Electrical Grid Stability
 ![elgrid_00333_00016](img/elgrid_00333_00016.png)
 ![elgrid_00333_00033](img/elgrid_00333_00033.png)
 ![elgrid_00333_00049](img/elgrid_00333_00049.png)
@@ -173,7 +173,7 @@
 ![elgrid_01333_00933](img/elgrid_01333_00933.png)
 ![elgrid_01333_01333](img/elgrid_01333_01333.png)
 
-## htru2
+## HTRU2
 ![htru2_00597_00029](img/htru2_00597_00029.png)
 ![htru2_00597_00059](img/htru2_00597_00059.png)
 ![htru2_00597_00089](img/htru2_00597_00089.png)

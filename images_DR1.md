@@ -1,6 +1,6 @@
 # Softening Results - method DR1
 
-## magic
+## Magic Telescope
 ![DR1_magic_00250_00012](img/DR1_magic_00250_00012.png)
 ![DR1_magic_00250_00025](img/DR1_magic_00250_00025.png)
 ![DR1_magic_00250_00037](img/DR1_magic_00250_00037.png)
@@ -44,7 +44,7 @@
 ![DR1_magic_05000_03500](img/DR1_magic_05000_03500.png)
 ![DR1_magic_05000_05000](img/DR1_magic_05000_05000.png)
 
-## mbne
+## MiniBooNE particle identification
 ![DR1_mbne_00250_00012](img/DR1_mbne_00250_00012.png)
 ![DR1_mbne_00250_00025](img/DR1_mbne_00250_00025.png)
 ![DR1_mbne_00250_00037](img/DR1_mbne_00250_00037.png)
@@ -176,7 +176,7 @@
 ![DR1_wfB_05000_03500](img/DR1_wfB_05000_03500.png)
 ![DR1_wfB_05000_05000](img/DR1_wfB_05000_05000.png)
 
-## eeges
+## EEG Eye State
 ![DR1_eeges_00250_00012](img/DR1_eeges_00250_00012.png)
 ![DR1_eeges_00250_00025](img/DR1_eeges_00250_00025.png)
 ![DR1_eeges_00250_00037](img/DR1_eeges_00250_00037.png)
@@ -227,7 +227,7 @@
 ![DR1_eeges_09987_06990](img/DR1_eeges_09987_06990.png)
 ![DR1_eeges_09987_09987](img/DR1_eeges_09987_09987.png)
 
-## elgrid
+## Electrical Grid Stability 
 ![DR1_elgrid_00333_00016](img/DR1_elgrid_00333_00016.png)
 ![DR1_elgrid_00333_00033](img/DR1_elgrid_00333_00033.png)
 ![DR1_elgrid_00333_00049](img/DR1_elgrid_00333_00049.png)
@@ -271,7 +271,7 @@
 ![DR1_elgrid_06667_04666](img/DR1_elgrid_06667_04666.png)
 ![DR1_elgrid_06667_06667](img/DR1_elgrid_06667_06667.png)
 
-## htru2
+## HTRU2
 ![DR1_htru2_00597_00029](img/DR1_htru2_00597_00029.png)
 ![DR1_htru2_00597_00059](img/DR1_htru2_00597_00059.png)
 ![DR1_htru2_00597_00089](img/DR1_htru2_00597_00089.png)
