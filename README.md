@@ -74,6 +74,7 @@ it has the same probabilistic distribution as the "wfA" data set.
 In the previous research of split softening in decision trees [1] we use two kinds of softening method:
 - without optimization
 - with optimization
+
 In the first group the method called "DR1" is identified as the best
 from the perspective of performance measured by AUC.
 In the second group the method "optim_auc" is the winner;
