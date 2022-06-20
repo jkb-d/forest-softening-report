@@ -82,6 +82,8 @@ it uses the Nelder-Mead optimization with the objective function
 defined as the AUC computed from the training set.
 We use the methods DR1 and optim_auc in our experiments with random forests.
 
+### AUC by forest size
+
 The results are presented in graphs where x-axis is the forest size (number of trees),
 y-axis represents AUC computed on the test set.
 The main title of the graph contains the data set name, the size of the train set
@@ -210,6 +212,29 @@ These cases fall into two groups:
 ![htru2_02386_02386](img/htru2_02386_02386.png)
 ![htru2_05966_05966](img/htru2_05966_05966.png)
 
+
+### AUC by training set size
+
+Another view to the results to accent the most interesteng achievements is presented in the following graphs.
+Because the method DR1 is in most cases as good as optim_auc and the cases
+where optim_auc beats DR1 are not practically important, we focus on the method DR1 here.
+We plot the values of AUC measured on test set of the forest with 200 trees
+depending on the size of training set drawn from each data set.
+
+![magic](img/DR1_magic_setsizes.png)
+![mbne](img/DR1_mbne_setsizes.png)
+![wfA](img/DR1_wfA_setsizes.png)
+![wfB](img/DR1_wfB_setsizes.png)
+![eeges](img/DR1_eeges_setsizes.png)
+![elgrid](img/DR1_elgrid_setsizes.png)
+![htru2](img/DR1_htru2_setsizes.png)
+
+Let's recall that on the data sets Magic Telescope and MiniBooNE softening does not improve results of the standard random forest.
+On the data sets EEG Eye State and HTRU2 a small improvement of the AUC appeared only with the smallest training set,
+(with sizes 250 and 597 cases, respectivelly.)
+When bigger training set is used, from these distributions, softening has negative effect.
+On the data sets wfA, wfB and Electrical Grid Stability a small improvement of AUC was observed for all sizes of training set,
+the effect was stronger when training sets under 1000 cases were used.
 
 ## Conclusion
 
