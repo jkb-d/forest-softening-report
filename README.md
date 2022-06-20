@@ -227,7 +227,7 @@ depending on the size of training set drawn from each data set.
 ![wfB](img/DR1_wfB_setsizes.png)
 ![eeges](img/DR1_eeges_setsizes.png)
 ![elgrid](img/DR1_elgrid_setsizes.png)
-![htru2](img/DR1_htru_setsizes.png)
+![htru2](img/DR1_htru2_setsizes.png)
 
 Let's recall that on the data sets Magic Telescope and MiniBooNE softening does not improve results of the standard random forest.
 On the data sets EEG Eye State and HTRU2 a small improvement of the AUC appeared only with the smallest training set,
