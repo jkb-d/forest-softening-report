@@ -75,8 +75,8 @@ In the previous research of split softening in decision trees [1] we use two kin
 - without optimization
 - with optimization
 
-In the first group the method called "DR1" is identified as the best
-from the perspective of performance measured by AUC.
+In the first group the method called "DR1" was identified in the previous research as the best
+from the perspective of performance of single trees measured by AUC.
 In the second group the method "optim_auc" is the winner;
 it uses the Nelder-Mead optimization with the objective function
 defined as the AUC computed from the training set.
